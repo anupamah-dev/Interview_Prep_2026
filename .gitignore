@@ -1,0 +1,17 @@
+# Ignore IDE, build, and node modules
+
+### Java
+*.class
+target/
+.idea/
+*.iml
+
+### Node
+node_modules/
+build/
+dist/
+.env
+
+### OS
+.DS_Store
+Thumbs.db

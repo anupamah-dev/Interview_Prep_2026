@@ -1,0 +1,64 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#fff;
+  --muted:#666;
+  --accent:#4f46e5;
+  --danger:#e11d48;
+}
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  margin:0;
+  padding:24px;
+  color:#111827;
+}
+.app {
+  max-width:720px;
+  margin:0 auto;
+}
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(15,23,42,0.06);
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+h1{font-size:20px;margin:0}
+.controls{display:flex;gap:8px;align-items:center}
+input[type="text"]{
+  padding:10px 12px;
+  border-radius:6px;
+  border:1px solid #e6e9ef;
+  width:100%;
+}
+.todo-list{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.todo-item{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #f0f2f7;
+}
+.todo-item.completed .title{ text-decoration:line-through; color:var(--muted) }
+.title{flex:1}
+.btn{
+  background:none;
+  border:1px solid transparent;
+  padding:6px 8px;
+  border-radius:6px;
+  cursor:pointer;
+}
+.btn-danger{ color:var(--danger) }
+.filters{display:flex;gap:8px;margin-top:12px}
+.filter-btn{ padding:6px 10px;border-radius:6px;border:1px solid transparent;cursor:pointer}
+.filter-btn.active{ background:var(--accent); color:white }
+.small{ font-size:13px;color:var(--muted) }
+.edit-input{ padding:8px;border-radius:6px;border:1px solid #e6e9ef;width:100% }
+.footer{ display:flex;justify-content:space-between;align-items:center;margin-top:12px }
